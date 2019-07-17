@@ -1,0 +1,35 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.wso2.custom.authenticator.local
+Built-By: janitha
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1563345617953
+Import-Package: javax.servlet;version="[2.6,3)",javax.servlet.http;ver
+ sion="[2.6,3)",org.apache.commons.logging;version="[1.2,2)";resolutio
+ n:=optional,org.osgi.framework;version="[1.7,2)";resolution:=optional
+ ,org.osgi.service.component;version="[1.2,2)";resolution:=optional,or
+ g.wso2.carbon.identity.application.authentication.framework;version="
+ [5.7,6)";resolution:=optional,org.wso2.carbon.identity.application.au
+ thentication.framework.context;version="[5.7,6)";resolution:=optional
+ ,org.wso2.carbon.identity.application.authentication.framework.except
+ ion;version="[5.7,6)";resolution:=optional,org.wso2.carbon.identity.a
+ pplication.authentication.framework.model;version="[5.7,6)";resolutio
+ n:=optional,org.wso2.carbon.identity.application.authentication.frame
+ work.util;version="[5.7,6)";resolution:=optional,org.wso2.carbon.user
+ .core.service;version="[4.4,5)";resolution:=optional,org.wso2.custom.
+ authenticator.local;version="[1.0,2)";resolution:=optional
+Service-Component: OSGI-INF/serviceComponents.xml
+Axis2Module: org.wso2.custom.authenticator.local-1.0.0
+DynamicImport-Package: *
+Tool: Bnd-1.43.0
+Export-Package: org.wso2.custom.authenticator.local;uses:="org.wso2.ca
+ rbon.identity.application.authentication.framework.context,javax.serv
+ let.http,org.wso2.carbon.identity.application.authentication.framewor
+ k.model,org.apache.commons.logging,org.wso2.carbon.identity.applicati
+ on.authentication.framework.exception,org.wso2.carbon.identity.applic
+ ation.authentication.framework.util,org.wso2.carbon.identity.applicat
+ ion.authentication.framework";version="1.0.0"
+Bundle-Version: 1.0.0
+Bundle-Name: org.wso2.custom.authenticator.local
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_201
+
